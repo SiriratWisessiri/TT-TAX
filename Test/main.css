@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .services {
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .why-us h3{
@@ -145,6 +145,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* About us CSS */
+.about-us {
+  margin-top: 2rem;
+}
 
 /* This div design part is
   used as an Image */
