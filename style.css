@@ -166,3 +166,22 @@ margin-bottom: 1rem;
     width: 2rem;
     margin-right: 2rem;
 }
+
+/* service & price html CSS */
+.services-row{
+  margin-top: 1rem;
+}
+.price{
+  margin-top: 3rem;
+}
+.services-row .col-md-5 img{
+  width: 100%;
+}
+@media (max-width: 800px){
+  .services-row .col-md-5 img{
+    display: none;
+  }
+  .pricing-banner{
+    display: none;
+  }
+}
