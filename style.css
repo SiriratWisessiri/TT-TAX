@@ -2,6 +2,16 @@ body {
     margin: 1rem 2rem;
     box-sizing: border-box;
 }
+
+:root {
+  --blue: 	#2c83ec;
+}
+
+.banner{
+  background: var(--blue);
+  color: whitesmoke;
+}
+
 /* Nav Bar CSS */
 .navbar{
     margin-bottom: 1.5rem;
@@ -66,8 +76,19 @@ margin-bottom: 1rem;
     margin-top: 3rem;
   }
 
-/* Footer CSS */
+  .articles .carousel-control-next-icon:after{
+    content: '>';
+    color: blue;
+    font-size: 3rem;
+    
+    }
+  .articles .carousel-control-prev-icon:after {
+    content: '<';
+    color: blue;
+    font-size: 3rem;
+  }
 
+/* Footer CSS */
 .blog-footer {
     margin-top: 3rem;
     padding: 2.5rem 0;
@@ -80,8 +101,12 @@ margin-bottom: 1rem;
     margin-bottom: 0;
   }
 
+  .footer-small {
+    display: none;
+  }
+
 /* Media */
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .profile-picture img{
         width: 120px;
         height: 120px;
@@ -89,11 +114,47 @@ margin-bottom: 1rem;
     .why-us hr{
         margin: 20px 20px;
     }
-    .carousel-control-next-icon:after{
+    /* .carousel-control-next-icon:after{
         display: none;
     }
       .carousel-control-prev-icon:after {
         display: none;
+    } */
+
+    /* Article Media query CSS */
+    .articles img {
+      display: none;
+    }
+    .articles .carousel-control-next-icon:after{
+      content: '>';
+      color: var(--blue);
+      font-size: 2rem;
+      position: absolute;
+      top: -5.5rem;
+      }
+    .articles .carousel-control-prev-icon:after {
+      content: '<';
+      color: var(--blue);
+      font-size: 2rem;
+      position: absolute;
+      top: -5.5rem;
+    }
+    .articles .card-text{
+      display: none;
+    }
+    .articles .card{
+      border: none;
+    }
+
+    .footer-small {
+      display: block;
+      text-align: left;
+      margin: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .blog-footer .table {
+      display: none;
     }
 }
 
